@@ -30,7 +30,7 @@ public class WiFiScanReceiver extends BroadcastReceiver {
         bestSignal = result;
     }
 
-    String message = String.format("%s networks found. %s is the strongest with signal level %d dBm.",
+    String message = String.format("%s networks are found in your nearby. %s is the strongest with signal level %d dBm.",
         results.size(), bestSignal.SSID, bestSignal.level);
     Toast.makeText(wifiLocator, message, Toast.LENGTH_LONG).show();
 
